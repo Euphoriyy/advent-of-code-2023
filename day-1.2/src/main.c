@@ -58,7 +58,7 @@ int main()
 
     int sum = 0;
 
-    fp = fopen("calibration.txt", "r");
+    fp = fopen("input.txt", "r");
     if (fp == NULL)
     {
         perror("fopen");

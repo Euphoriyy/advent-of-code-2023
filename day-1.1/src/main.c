@@ -12,9 +12,7 @@ int get_calibration_value(char *str)
             if (digits[0] == 0)
                 digits[0] = c;
             else
-            {
                 digits[1] = c;
-            }
         }
     }
     if (digits[1] == 0)
@@ -31,7 +29,7 @@ int main()
 
     int sum = 0;
 
-    fp = fopen("calibration.txt", "r");
+    fp = fopen("input.txt", "r");
     if (fp == NULL)
     {
         perror("fopen");
